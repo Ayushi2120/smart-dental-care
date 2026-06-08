@@ -2484,7 +2484,7 @@ analyzeBtn.addEventListener("click", async () => {
       ========================= */
 
       const res = await fetch(
-        "http://localhost:5000/analyze",
+        "https://smart-dental-care.onrender.com/analyze",
         {
           method: "POST",
 
@@ -2591,7 +2591,7 @@ analyzeBtn.addEventListener("click", async () => {
     try {
 
         const res = await fetch(
-          "http://localhost:5000/chat",
+          "https://smart-dental-care.onrender.com/chat",
           {
             method: "POST",
 
@@ -2781,7 +2781,7 @@ behavior:"smooth"
 
 //Backend
 
-fetch("http://localhost:5000")
+fetch("https://smart-dental-care.onrender.com")
 .then(res => res.text())
 .then(data => console.log(data));
 
@@ -2799,7 +2799,7 @@ fetch("http://localhost:5000")
     };
 
  const res = await fetch(
-  "http://localhost:5000/appointment",
+  "https://smart-dental-care.onrender.com/appointment",
   {
     method: "POST",
 
@@ -2828,7 +2828,7 @@ let allFeedbacks = [];
 // 🔄 LOAD FROM DATABASE
 async function loadFeedbacks() {
   try {
-    const res = await fetch("http://localhost:5000/feedback");
+    const res = await fetch("https://smart-dental-care.onrender.com/feedback");
     const data = await res.json();
 
     console.log("DATA:", data); // 🔥 check kar
@@ -2886,7 +2886,7 @@ document.getElementById("feedbackForm").addEventListener("submit", async functio
     return;
   }
 
-  await fetch("http://localhost:5000/feedback", {
+  await fetch("https://smart-dental-care.onrender.com/feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -2925,7 +2925,7 @@ document.getElementById("signupForm").addEventListener("submit", async function(
     password: inputs[2].value
   };
 
-  const res = await fetch("http://localhost:5000/signup", {
+  const res = await fetch("https://smart-dental-care.onrender.com/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -2947,7 +2947,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     password: inputs[1].value
   };
 
-  const res = await fetch("http://localhost:5000/login", {
+  const res = await fetch("https://smart-dental-care.onrender.com/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -3059,7 +3059,7 @@ document.getElementById("signupForm").addEventListener("submit", async function(
     password: inputs[2].value
   };
 
-  const res = await fetch("http://localhost:5000/signup", {
+  const res = await fetch("https://smart-dental-care.onrender.com/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -3083,7 +3083,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     password: inputs[1].value
   };
 
-  const res = await fetch("http://localhost:5000/login", {
+  const res = await fetch("https://smart-dental-care.onrender.com/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
