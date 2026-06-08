@@ -906,7 +906,7 @@ background:#eef8f4 !important;
 .dark-mode #appointment{
 background:#0f172a !important;
 }
-}
+
 .dark-mode .appointment-form h2{
 color:#0f172a !important;
 }
@@ -1206,6 +1206,55 @@ transform:translateY(0);
   }
 }
 
+#blog-detail{
+min-height:100vh;
+background:#f8fafc;
+padding-top:120px;
+}
+
+#blog-detail img{
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+#blogContent{
+font-size:18px;
+line-height:1.9;
+}
+
+#blogContent h2{
+font-size:38px;
+font-weight:800;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+#blogContent h3{
+font-size:26px;
+font-weight:700;
+margin-top:30px;
+margin-bottom:12px;
+color:#0d9488;
+}
+
+#blogContent ul{
+padding-left:25px;
+margin:20px 0;
+}
+
+#blogContent li{
+margin-bottom:10px;
+}
+
+.dark-mode #blog-detail{
+background:#0f172a;
+}
+
+.dark-mode #blogContent h2,
+.dark-mode #blogContent h3,
+.dark-mode #blogContent p,
+.dark-mode #blogContent li{
+color:white;
+}
 </style>
 </head>
 
@@ -1287,9 +1336,10 @@ class="brand-logo">
 
 </nav>
 
-</div>
+
 
 </header>
+
 
 
     <!-- Hero Section -->
@@ -1579,42 +1629,67 @@ class="rounded-2xl shadow-xl">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-tooth"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">General Dentistry</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Routine checkups, cleanings, and fillings to keep your natural teeth healthy and strong.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                    <a href="#"
+onclick="bookService('General Checkup')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
                 </div>
                 <!-- Service 2 -->
                 <div class="service-card bg-white dark:bg-#0d9488 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 transition-all">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-grin"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">Cosmetic Veneers</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Transform your smile with custom-made porcelain veneers designed for perfection.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                    <a href="#"
+onclick="bookService('Cosmetic Veneers')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
                 </div>
                 <!-- Service 3 -->
                 <div class="service-card bg-white dark:bg-#0d9488 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 transition-all">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-shield-alt"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">Root Canal Therapy</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Advanced painless root canal procedures using the latest rotary endodontics.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                                       <a href="#"
+onclick="bookService('Root Canal Therapy')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
                 </div>
                 <!-- Service 4 -->
                 <div class="service-card bg-white dark:bg-#0d9488 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 transition-all">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-child"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">Pediatric Dentistry</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">A friendly, fun environment to introduce your little ones to lifelong oral health.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                                                         <a href="#"
+onclick="bookService('Pediatric Dentistry')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
                 </div>
                 <!-- Service 5 -->
                 <div class="service-card bg-white dark:bg-#0d9488 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 transition-all">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-vial"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">Dental Implants</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Permanent solutions for missing teeth that look, feel, and function like natural ones.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                                                                           <a href="#"
+onclick="bookService('Dental Implants')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
+      
                 </div>
                 <!-- Service 6 -->
                 <div class="service-card bg-white dark:bg-#0d9488 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 transition-all">
                     <div class="text-4xl text-teal-600 mb-6"><i class="fas fa-teeth-open"></i></div>
                     <h3 class="text-xl font-bold mb-3 dark:text-green">Orthodontics</h3>
                     <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Braces and invisible aligners (Invisalign) to straighten your smile discreetly.</p>
-                    <a href="#appointment" class="text-amber-500 font-bold text-sm hover:underline">Book Now &rarr;</a>
+                                                                                              <a href="#"
+onclick="bookService('Orthodontics')"
+class="text-amber-500 font-bold text-sm hover:underline">
+Book Now →
+</a>
                 </div>
             </div>
         </div>
@@ -1675,10 +1750,13 @@ class="rounded-2xl shadow-xl">
 
           <input type="email" placeholder="Email Address" class="appointment-input">
 
-          <select class="appointment-input">
-            <option>Select Service</option>
+          <select id="serviceSelect" class="appointment-input">
             <option>General Checkup</option>
-            <option>Orthodontics</option>
+<option>Cosmetic Veneers</option>
+<option>Root Canal Therapy</option>
+<option>Pediatric Dentistry</option>
+<option>Dental Implants</option>
+<option>Orthodontics</option>
           </select>
 
           <textarea placeholder="Describe your concern..." class="appointment-input h-32"></textarea>
@@ -1804,7 +1882,55 @@ hidden
                     <p class="text-xs text-teal-600 font-bold mb-2">DENTAL TIPS</p>
                     <h3 class="text-xl font-bold mb-2 !text-slate-900 dark:text-white group-hover:text-teal-600 transition">5 Ways to Keep Gums Healthy</h3>
                     <p class="text-slate-500 text-sm mb-4">Healthy gums are the foundation of a healthy smile. Learn the daily habits that matter...</p>
-                    <a href="#" class="text-amber-500 font-bold text-sm">Read Article &rarr;</a>
+                   <a href="#"
+onclick="openBlog(
+'5 Ways to Keep Gums Healthy',
+'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=1200',
+`
+<h2>Why Healthy Gums Matter</h2>
+
+<p>
+Healthy gums are the foundation of a strong and beautiful smile.
+Ignoring gum health can lead to bleeding gums, bad breath,
+and even tooth loss.
+</p>
+
+<h3>1. Brush Twice Daily</h3>
+<p>
+Brush for at least two minutes using fluoride toothpaste.
+</p>
+
+<h3>2. Floss Every Day</h3>
+<p>
+Floss removes plaque and food particles between teeth.
+</p>
+
+<h3>3. Quit Smoking</h3>
+<p>
+Smoking significantly increases the risk of gum disease.
+</p>
+
+<h3>4. Visit Your Dentist</h3>
+<p>
+Professional cleaning every 6 months keeps gums healthy.
+</p>
+
+<h3>5. Eat Healthy Foods</h3>
+<p>
+Vitamin C rich fruits and vegetables support gum tissues.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+Healthy gums mean a healthier smile and fewer dental problems.
+Small daily habits create lifelong oral health.
+</p>
+`
+)"
+class="text-amber-500 font-bold text-sm">
+Read Article →
+</a>
                 </article>
                 <article class="group">
                     <div class="overflow-hidden rounded-2xl mb-4">
@@ -1813,7 +1939,52 @@ hidden
                     <p class="text-xs text-teal-600 font-bold mb-2">TREATMENTS</p>
                     <h3 class="text-xl font-bold mb-2 !text-slate-900 dark:text-white group-hover:text-teal-600 transition">Invisalign vs. Traditional Braces</h3>
                     <p class="text-slate-500 text-sm mb-4">Which one is right for your lifestyle? We break down the costs, time, and comfort...</p>
-                    <a href="#" class="text-amber-500 font-bold text-sm">Read Article &rarr;</a>
+                    <a href="#"
+onclick="openBlog(
+'Invisalign vs Traditional Braces',
+'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=1200',
+`
+<h2>Choosing The Right Orthodontic Treatment</h2>
+
+<p>
+Both Invisalign and traditional braces can straighten teeth,
+but each has different advantages.
+</p>
+
+<h3>Invisalign Benefits</h3>
+
+<ul>
+<li>Nearly invisible appearance</li>
+<li>Removable while eating</li>
+<li>Comfortable smooth trays</li>
+<li>Easier oral hygiene</li>
+</ul>
+
+<h3>Traditional Braces Benefits</h3>
+
+<ul>
+<li>Suitable for complex cases</li>
+<li>Often lower cost</li>
+<li>No need to remove aligners</li>
+</ul>
+
+<h3>Which One Is Better?</h3>
+
+<p>
+The right treatment depends on your dental condition,
+budget and lifestyle.
+</p>
+
+<h2>Expert Recommendation</h2>
+
+<p>
+Visit our clinic for a personalized smile assessment.
+</p>
+`
+)"
+class="text-amber-500 font-bold text-sm">
+Read Article →
+</a>
                 </article>
                 <article class="group">
                     <div class="overflow-hidden rounded-2xl mb-4">
@@ -1822,12 +1993,84 @@ hidden
                     <p class="text-xs text-teal-600 font-bold mb-2">KIDS CORNER</p>
                     <h3 class="text-xl font-bold mb-2 !text-slate-900 dark:text-white group-hover:text-teal-600 transition">Your Child's First Dental Visit</h3>
                     <p class="text-slate-500 text-sm mb-4">Tips for parents to make the first dental appointment an exciting and fearless adventure...</p>
-                    <a href="#" class="text-amber-500 font-bold text-sm">Read Article &rarr;</a>
+                    <a href="#"
+onclick="openBlog(
+'Your Child First Dental Visit',
+'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=1200',
+`
+<h2>Making The First Visit Fun</h2>
+
+<p>
+A child's first dental visit should be positive and stress-free.
+</p>
+
+<h3>When Should Children Visit?</h3>
+
+<p>
+The first visit is recommended by age one or within six months
+of the first tooth appearing.
+</p>
+
+<h3>How Parents Can Prepare</h3>
+
+<ul>
+<li>Talk positively about the dentist</li>
+<li>Avoid scary words</li>
+<li>Bring favorite toys</li>
+<li>Schedule morning appointments</li>
+</ul>
+
+<h3>What Happens During The Visit?</h3>
+
+<p>
+The dentist checks oral development, cleans teeth and
+guides parents on oral hygiene.
+</p>
+
+<h2>Building Lifelong Habits</h2>
+
+<p>
+Early dental visits create confidence and healthy habits
+for life.
+</p>
+`
+)"
+class="text-amber-500 font-bold text-sm">
+Read Article →
+</a>
                 </article>
             </div>
         </div>
     </section>
 
+
+    <section id="blog-detail"
+class="page-section py-24">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<button
+onclick="backToBlogs()"
+class="mb-8 text-teal-600 font-bold">
+← Back to Blogs
+</button>
+
+<h1 id="blogTitle"
+class="text-5xl font-bold mb-6">
+</h1>
+
+<img
+id="blogImage"
+class="w-full h-[450px] object-cover rounded-3xl mb-8">
+
+<div
+id="blogContent"
+class="prose prose-lg max-w-none">
+</div>
+
+</div>
+
+</section>
     <!-- Patient Feedback Section -->
 <section id="feedback" class="page-section py-24 bg-slate-50 dark:">
   <div class="container mx-auto px-6">
@@ -3118,8 +3361,56 @@ imagePreview.classList.remove("hidden");
 });
 });
 
+function bookService(serviceName){
 
+  showSection('appointment');
 
+  const serviceDropdown =
+  document.getElementById('serviceSelect');
+
+  serviceDropdown.value = serviceName;
+
+}
+
+function openBlog(title, image, content) {
+
+  // hide navbar
+  document.querySelector('.glass-header').style.display = 'none';
+
+  // hide all sections
+  document.querySelectorAll('.page-section').forEach(section => {
+    section.style.display = 'none';
+  });
+
+  // show article
+  document.getElementById('blog-detail').style.display = 'block';
+  document.getElementById('blog-detail')
+.classList.add('active-section');
+
+  document.getElementById('blogTitle').innerHTML = title;
+  document.getElementById('blogImage').src = image;
+  document.getElementById('blogContent').innerHTML = content;
+
+  window.scrollTo(0, 0);
+}
+
+function backToBlogs() {
+
+  document.querySelector('.glass-header').style.display = 'block';
+
+  document.getElementById('blog-detail').style.display = 'none';
+
+  document.querySelectorAll('.page-section').forEach(section => {
+    section.style.display = '';
+  });
+
+  showSection('blog');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
     </script>
 
 
