@@ -24,7 +24,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 /* =======================
    CONNECT DATABASE
 ======================= */
-mongoose.connect("mongodb://1133557799:1133557799@ac-vaiwqsh-shard-00-00.ppw3mkv.mongodb.net:27017,ac-vaiwqsh-shard-00-01.ppw3mkv.mongodb.net:27017,ac-vaiwqsh-shard-00-02.ppw3mkv.mongodb.net:27017/clinicDB?ssl=true&replicaSet=atlas-rvynp2-shard-0&authSource=admin&appName=SmileCare")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB connected ✅"))
 .catch(err => console.log(err));
 
