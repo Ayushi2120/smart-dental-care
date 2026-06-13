@@ -45,7 +45,7 @@ Many people ignore early dental symptoms due to lack of awareness and access to 
 
 Smart Dental Care is an AI-powered platform that helps users identify possible dental conditions, understand the seriousness of their symptoms, and make informed decisions about seeking professional care. The platform includes an AI chatbot that provides preliminary guidance, answers common dental health questions, and helps users determine when they should visit a dental clinic.
 
-##** Key Features**
+## Key Features
 
 - AI Dental Health Assistant
 - Symptom-based Guidance
