@@ -31,7 +31,7 @@ An AI-powered dental healthcare platform that helps users detect dental issues, 
 
 ## Live Demo
 
-smart-dental-care-silk.vercel.app
+https://smart-dental-care-silk.vercel.app
 
 ## GitHub Repository
 
